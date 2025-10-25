@@ -180,6 +180,7 @@ const livros = [
   {nome: "Nietzsche (HQ) (Onfray~Leroy) ", pdf:"https://drive.google.com/file/d/10CSeRsjAKb__j9PGSqz3isvKzVKjYn-Y/view", img:"https://m.media-amazon.com/images/I/51ZJd4NX9HL._AC_UF1000,1000_QL80_.jpg", categoria:"HQ"},
   {nome: "A Menina do Outro Lado 1 (Nagabe) ", pdf:"https://drive.google.com/file/d/1UgQ2lq8hOn1F8sO2bi_3e-_EklxL6ffH/view", img:"https://i.pinimg.com/736x/e9/4f/0e/e94f0efa2737b7acf1fb2dbf6eba9509.jpg", categoria:"HQ"},
   {nome: "A Diferença Invisível – Mademoiselle Caroline Julie ", pdf:"https://drive.google.com/file/d/1RJqp5JDIMjfQLIZ0HBkgv_ZZYfBBWRHX/view", img:"https://grupoautentica.f1cdn.com.br/view/1080/1080/false/true/1185.jpg?MTE4NS0=", categoria:"HQ"},
+  /*{nome: "", pdf:"", img:"", categoria:""},
   {nome: "", pdf:"", img:"", categoria:""},
   {nome: "", pdf:"", img:"", categoria:""},
   {nome: "", pdf:"", img:"", categoria:""},
@@ -204,8 +205,7 @@ const livros = [
   {nome: "", pdf:"", img:"", categoria:""},
   {nome: "", pdf:"", img:"", categoria:""},
   {nome: "", pdf:"", img:"", categoria:""},
-  {nome: "", pdf:"", img:"", categoria:""},
-  {nome: "", pdf:"", img:"", categoria:""},
+  {nome: "", pdf:"", img:"", categoria:""},*/
 ];
 
 // ----------------------------------------------------- CATEGORIAS ---------------------------------------------------------------------------------------------
@@ -333,6 +333,7 @@ categoriaLinks.forEach(link => {
         mostrarLivrosPorCategoria(categoria);
     });
 });
+
 
 
 renderAllCategories();
