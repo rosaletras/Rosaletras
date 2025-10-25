@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Letras - CONTATO</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
+
+    <style>
+        .rosaletras-container {
+            background-color: #000000;
+            color: #ff69b4;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .rosaletras-titulo {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+        }
+
+        .rosaletras-subtitulo {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-align: center;
+            opacity: 0.8;
+            max-width: 600px;
+        }
+
+        .rosaletras-contato-card {
+            background-color: rgba(255, 105, 180, 0.1);
+            border: 2px solid #ff69b4;
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .rosaletras-email {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+            padding: 15px;
+            background-color: rgba(255, 105, 180, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .rosaletras-email:hover {
+            transform: scale(1.03);
+            background-color: rgba(255, 105, 180, 0.3);
+        }
+
+        .rosaletras-email a {
+            color: #ff69b4;
+            font-size: 1.3rem;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .rosaletras-email a:hover {
+            text-decoration: underline;
+        }
+
+        .rosaletras-icone {
+            font-size: 1.8rem;
+        }
+
+        .rosaletras-descricao {
+            text-align: center;
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .rosaletras-voltar {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .rosaletras-voltar a {
+            color: #ff69b4;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #ff69b4;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .rosaletras-voltar a:hover {
+            background-color: rgba(255, 105, 180, 0.2);
+            text-decoration: none;
+        }
+
+        .rosaletras-aviso {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            text-align: center;
+            max-width: 600px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header class="menu-header">
+        <div class="menu-logo"><a href="../index.html"><img src="../src/logo.png" alt="" srcset=""></a></div>
+        <div class="menu-hamburguer" id="menuBtn">
+            <div class="menu-barra"></div>
+            <div class="menu-barra"></div>
+            <div class="menu-barra"></div>
+        </div>
+    </header>
+
+    <nav class="menu-lateral" id="menuLateral">
+        <a href="../index.html" class="menu-link">Início</a>
+        <a href="ppt.html" class="menu-link"> Termos</a>
+        <a href="doar.html" class="menu-link">Doar</a>
+        <a href="contato.html" class="menu-link">Contato</a>
+    </nav>
+    <div class="ppt">
+<h2></h2>
+    </div>
+    <div class="rosaletras-container">
+        <h1 class="rosaletras-titulo">Entre em Contato</h1>
+        
+        <p class="rosaletras-subtitulo">
+            Tem alguma dúvida, sugestão ou quer colaborar com o Rosa Letras?
+        </p>
+
+        <div class="rosaletras-contato-card">
+            <h2>E-mail de Contato</h2>
+            
+            <div class="rosaletras-email">
+                <span class="rosaletras-icone">✉️</span>
+                <a href="mailto:rosaletras@proton.me">rosaletras@proton.me</a>
+            </div>
+            
+            <p>Responderemos o mais breve possível!</p>
+        </div>
+
+        <p class="rosaletras-descricao">
+            Sua opinião é muito importante para nós. <br>
+            Estamos sempre buscando melhorar o Rosa Letras e valorizamos cada mensagem recebida.
+        </p>
+
+        <div class="rosaletras-voltar">
+            <a href="../index.html">← Voltar para a página inicial</a>
+        </div>
+
+        <p class="rosaletras-aviso">
+            ※ Geralmente respondemos em até 48 horas.
+        </p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-imagem">
+                <a href="../index.html"><img src="../src/ler.png" alt="Logo Ler"></a>
+            </div>
+            <div class="footer-texto">
+                Obrigado por acessar nosso site, tenha uma boa leitura.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

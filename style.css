@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== HEADER ===== */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-logo img {
+    max-width: 140px;
+}
+
+/* ===== BOTÃO HAMBÚRGUER ===== */
+.menu-hamburguer {
+    width: 35px;
+    height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-barra {
+    height: 4px;
+    width: 100%;
+    background-color: #f562ab;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-hamburguer.ativo {
+    transform: rotate(90deg);
+}
+
+.menu-hamburguer.ativo .menu-barra:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 9px);
+}
+
+.menu-hamburguer.ativo .menu-barra:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburguer.ativo .menu-barra:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== MENU LATERAL ===== */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100%;
+    background-color: #0e0e0e;
+    box-shadow: -2px 0 12px rgba(255, 20, 147, 0.5);
+    transition: right 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    gap: 15px;
+    z-index: 999;
+    border-radius: 40px 0px 0px 40px;
+}
+
+.menu-lateral.ativo {
+    right: 0;
+}
+
+/* ===== LINKS ===== */
+.menu-link {
+    color: #ffd5ea;
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.menu-link:hover {
+    background-color: #74003e;
+    color: #000;
+}
+
+/* ===== SUBMENU CATEGORIAS ===== */
+.menu-item-categorias {
+    position: relative;
+}
+
+.menu-categorias {
+    display: none;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.menu-item-categorias.ativo .menu-categorias {
+    display: flex;
+}
+
+.menu-categorias a {
+    color: #ffb6c1;
+    font-size: 0.95rem;
+    padding: 6px 0;
+    transition: 0.2s;
+}
+
+.menu-categorias a:hover {
+    color: #fff;
+}
+
+/* ===== CARROSSEL DE DESTAQUE ===== */
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.carrossel-container {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 22/8;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin: 75px 0px -7px 0px;
+}
+
+.carrossel-slides {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.carrossel-slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carrossel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.carrossel-bolinha {
+    width: 14px;
+    height: 14px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carrossel-bolinha.ativa {
+    background-color: #ff66b2;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ff66b2;
+}
+
+/* ===== BARRA DE PESQUISA ===== */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 120px auto 20px auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: pink;
+    color: #b700b0;
+}
+
+
+
+/* ===== CARROSSEL DE CATEGORIAS ===== */
+.category {
+    margin: 20px;
+}
+
+.category h2 {
+    margin-bottom: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #f0f0f000;
+    border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #ff66b2;
+    border-radius: 4px;
+    border: 2px solid #ffffff00;
+}
+
+.carousel {
+    scrollbar-width: thin;
+    scrollbar-color: #ff66b2 #f0f0f000;
+}
+
+.book {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    background: rgb(245 98 171);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    color: #fff;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-imagem img {
+    max-width: 120px;
+    height: auto;
+}
+
+.footer-texto {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.footer-texto a {
+    color: #ff66b2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-texto a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .book img {
+        height: 180px;
+    }
+
+    h2.categoria-titulo {
+        font-size: 1.3rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-imagem img {
+        max-width: 100px;
+    }
+
+    .footer-texto {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrossel-bolinha {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.book img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.lista-livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px;
+}
+
+.lista-livros .book {
+    flex: none;
+    text-align: center;
+}
+
+.lista-livros .book img {
+    width: 50%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.ppt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    margin-top: 65px;
+    max-width: 80%;
+}

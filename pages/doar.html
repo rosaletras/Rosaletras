@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Letras - DOAR</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../src/icon.png" type="image/x-icon">
+
+
+    <style>
+        .rosaletras-container {
+            background-color: #000000;
+            color: #ff69b4;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .rosaletras-titulo {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+        }
+
+        .rosaletras-qrcode {
+            border: 3px solid #ff69b4;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgba(255, 105, 180, 0.1);
+            margin-bottom: 25px;
+        }
+
+        .rosaletras-qrcode img {
+            width: 250px;
+            height: 250px;
+            display: block;
+        }
+
+        .rosaletras-endereco {
+            background-color: rgba(255, 105, 180, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            word-break: break-all;
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .rosaletras-descricao {
+            text-align: center;
+            max-width: 600px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .rosaletras-aviso {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            text-align: center;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header class="menu-header">
+        <div class="menu-logo"><a href="../index.html"><img src="../src/logo.png" alt="" srcset=""></a></div>
+        <div class="menu-hamburguer" id="menuBtn">
+            <div class="menu-barra"></div>
+            <div class="menu-barra"></div>
+            <div class="menu-barra"></div>
+        </div>
+    </header>
+
+    <nav class="menu-lateral" id="menuLateral">
+        <a href="../index.html" class="menu-link">Início</a>
+        <a href="ppt.html" class="menu-link"> Termos</a>
+        <a href="doar.html" class="menu-link">Doar</a>
+        <a href="contato.html" class="menu-link">Contato</a>
+    </nav>
+    <div class="ppt">
+<h2></h2>
+    </div>
+
+  
+    <div class="rosaletras-container">
+        <h1 class="rosaletras-titulo">Doações Bitcoin</h1>
+        
+        <p class="rosaletras-descricao">
+            Ajude a manter este projeto vivo!<br>
+            Todo contribuição é muito bem-vinda e apreciada.
+        </p>
+
+        <div class="rosaletras-qrcode">
+            <img src="../src/code.png" alt="QR Code para Doação Bitcoin">
+        </div>
+
+        <div class="rosaletras-endereco">
+            <strong>Endereço Bitcoin:</strong><br>
+            bc1q3pascx85axn6srn0n6g4ct45hh4jvt0nclvrmn
+        </div>
+
+        <p class="rosaletras-aviso">
+            ※ As doações em Bitcoin são processadas pela rede blockchain e não podem ser revertidas.
+        </p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-imagem">
+               <img src="../src/ler.png" alt="Logo Ler">
+            </div>
+            <div class="footer-texto">
+                Obrigado por acessar nosso site, tenha uma boa leitura.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

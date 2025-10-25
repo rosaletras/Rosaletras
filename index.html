@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Letras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="menu-header">
+        <a href="index.html"><div class="menu-logo"><img src="src/logo.png" alt="" srcset=""></div></a>
+
+        <div class="menu-hamburguer" id="menuBtn">
+            <div class="menu-barra"></div>
+            <div class="menu-barra"></div>
+            <div class="menu-barra"></div>
+        </div>
+    </header>
+
+  
+    <nav class="menu-lateral" id="menuLateral">
+        <a href="index.html" class="menu-link">Início</a>
+
+        <div class="menu-item-categorias" id="categoriasItem">
+          <a href="#" class="menu-link">Categorias</a>
+          <div class="menu-categorias">
+              <a href="#" data-categoria="Romance">Romance</a>
+              <a href="#" data-categoria="Fantasia">Fantasia</a>
+              <a href="#" data-categoria="Terror">Terror</a>
+              <a href="#" data-categoria="Biografia">Biografia</a>
+              <a href="#" data-categoria="Ficção">Ficção</a>
+              <a href="#" data-categoria="HQ">HQ</a>
+          </div>
+      </div>
+
+        <a href="pages/ppt.html" class="menu-link">Termos </a>
+        <a href="pages/doar.html" class="menu-link">Doar</a>
+        <a href="pages/contato.html" class="menu-link">Contato</a>
+    </nav>
+
+    <div class="carrossel-container">
+        <div class="carrossel-slides" id="carrosselSlides">
+          <div class="carrossel-slide"><img src="src/banner1.png" alt="Imagem 1"></div>
+          <div class="carrossel-slide"><a href="pages/ppt.html"><img src="src/banner2.png" alt="Imagem 2"></a></div>
+          <div class="carrossel-slide"><a href="pages/doar.html"><img src="src/banner3.png" alt="Imagem 3"></a></div>
+          <div class="carrossel-slide"><a href="pages/contato.html"><img src="src/banner4.png" alt="Imagem 4"></a></div>
+          <div class="carrossel-slide"><img src="src/banner5.png" alt="Imagem 5"></div>
+        </div>
+      </div>
+    
+      <div class="carrossel-indicadores" id="carrosselIndicadores">
+        <div class="carrossel-bolinha ativa" data-index="0"></div>
+        <div class="carrossel-bolinha" data-index="1"></div>
+        <div class="carrossel-bolinha" data-index="2"></div>
+        <div class="carrossel-bolinha" data-index="3"></div>
+        <div class="carrossel-bolinha" data-index="4"></div>
+      </div>
+
+<!-- ======== BARRA DE PESQUISA ======== -->
+<header>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Pesquisar livro...">
+  </div>
+</header>
+
+<main id="categoriesContainer">
+  <!-- Carrosséis de categorias serão gerados aqui pelo JS -->
+</main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-imagem">
+            <img src="src/ler.png" alt="Logo Ler">
+          </div>
+          <div class="footer-texto">
+            Obrigado por acessar nosso site, tenha uma boa leitura. <a href="https://t.me/+CerU9Sh1xD4zZGMx"> Grupo Telegram</a>.
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
