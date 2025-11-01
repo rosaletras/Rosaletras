@@ -207,6 +207,28 @@ const livros = [
   {nome: "A queda (Albert Camus) ", pdf:"https://drive.google.com/file/d/121O5kxnEq-pebeLrvFWW-83PMWjBNUG0/view", img:"https://i.pinimg.com/736x/49/27/99/4927996d72e5044f48d74c94fc285c1c.jpg", categoria:"Existencialismo"},
   {nome: "Amor vampiro (Vianco Andre)", pdf:"https://drive.google.com/file/d/1Ae3Xf8ENsE0W3jnPYKJDG8P94l6O4J6T/view?usp=drive_open", img:"https://i.pinimg.com/736x/0f/46/b3/0f46b3ded173f9ebbe7114d87daa29e9.jpg", categoria:"Terror"},
   {nome: "A Odisseia - HQ (Homero)", pdf:"https://drive.google.com/file/d/15GrrAMKav3B6z6h1FSOQ5PdJlNYX3X8d/view", img:"https://www.lpm.com.br/livros/Imagens/odisseia_hq_9788525433640_g.jpg", categoria:"HQ"},
+  {nome: "Blockchain Para leigos (Tiana Laurence) ", pdf:"https://drive.google.com/file/d/1B59Rsa61KUxQmR6my2EkPeffuPT7ds5H/view", img:"https://i.pinimg.com/736x/51/80/9e/51809ed6e2c8606ab6155c341478243e.jpg", categoria:"Educação"},
+  {nome: "Demian (Hermann Hesse)", pdf:"https://drive.google.com/file/d/1itKsf62m5ONG8IS-CW5ha4ui4gFHT_5T/view", img:"https://i.pinimg.com/736x/1b/e0/e7/1be0e7095afd0723c1a5f07e312f3e32.jpg", categoria:"Existencialismo"},
+  {nome: "Engenharia De Software (Kechi Hirama (Auth.)", pdf:"https://drive.google.com/file/d/13yC0iHb85CZZ3TbQJ5rfcqe402cmhT4N/view?usp=drive_open", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSJKKiGUqMmuPrK_lXS7evg-qBOrSEvlOH0w&s", categoria:"Educação"},
+  {nome: "Engenharia De Software. Conceitos E Práticas (Raul Wazlawick (Auth.)) ", pdf:"https://drive.google.com/open?id=1MUqdv1dYNk7PaaYSgbFrmZiLJkJsI-Hx&authuser=0", img:"https://m.media-amazon.com/images/I/91UPIaWa6zL._AC_UF1000,1000_QL80_.jpg", categoria:"Educação"},
+  {nome: "Eterna Vigilância (Edward Snowden) ", pdf:"https://drive.google.com/file/d/1gVxwArMQpPgaymanqXb0tAwrMY6oJo-r/view", img:"https://i.pinimg.com/736x/4d/9d/5c/4d9d5ced6324647e16f49584fafd9061.jpg", categoria:"Biografia"},
+  {nome: "Humano Demasiado Humano (Friedrich Nietzsche)", pdf:"https://drive.google.com/file/d/1oN--la7YSs2FPGLUvzRdzulcPXcPEMsO/view", img:"https://i.pinimg.com/736x/35/87/b1/3587b1f01d4117f5c836aa2c82fa0c8d.jpg", categoria:"Existencialismo"},
+  {nome: "Indigno de ser humano (Osamu Dazai) ", pdf:"https://drive.google.com/file/d/1ZPalq-TZQUgk1F8bXy7ClXv2OoUCX128/view", img:"https://i.pinimg.com/736x/fd/66/1d/fd661da3b685f222ac7e82ca2f4db7e8.jpg", categoria:"Existencialismo"},
+  {nome: "Introdução ao Pentest (Daniel Moreno) ", pdf:"https://drive.google.com/file/d/1CxwRR0AOAMvBp0dw5YTz7QTAZ3QVtm5z/view", img:"https://i.pinimg.com/1200x/00/df/71/00df719d5cab01bea14e913ca10d90aa.jpg", categoria:"Educação"},
+  {nome: "Medicina dos Horrores (Lindsey Fitzharris)", pdf:"https://drive.google.com/file/d/1b3X_HOmIkMRbQRw2i-z9zL9185-Ef2F4/view", img:"https://i.pinimg.com/736x/e7/9c/17/e79c17b074dd2546ef0a0cd5faaf3113.jpg", categoria:"Biografia"},
+  {nome: "Segurança de Computadores (WILLIAM STALLINGS) ", pdf:"https://drive.google.com/file/d/1a_Q-tEdNOuQcG9qjNOgjEVzKPnVcYQTw/view", img:"https://i.pinimg.com/736x/94/ed/4a/94ed4a92e28a78469747812ab71c770f.jpg", categoria:"Educação"},
+  {nome: "Sidarta (Hesse Hermann)", pdf:"https://drive.google.com/file/d/12J_OJKu9F243lmibajyFknQUiVHx3yr5/view", img:"https://i.pinimg.com/736x/da/31/34/da313422bfed24b4c977f52b14cf4622.jpg", categoria:"Existencialismo"},
+  {nome: "O Alienista (Machado de Assis [Assis, Machado de])", pdf:"https://drive.google.com/file/d/1goGNg6rmTlU9s5zLK2LBGI5ctaG3IvzI/view", img:"https://i.pinimg.com/736x/9e/3f/c0/9e3fc0bba682fa3ed424fe2f73d24f58.jpg", categoria:"Existencialismo"},
+  {nome: "Paraíso perdido (John Milton) ", pdf:"https://drive.google.com/file/d/1wQwGzxnCy1_bQqwV6eTLOpCx9hOADRGY/view?usp=drive_open", img:"https://i.pinimg.com/736x/9a/54/8f/9a548f346ce8e57d9894f133898a44ba.jpg", categoria:"Existencialismo"},
+  {nome: "Ilíada e Odisseia (Homero) ", pdf:"https://drive.google.com/file/d/1TTg7WiKNWt_BZkZJ5BVmcNXEqVNYzTAs/view", img:"https://i.pinimg.com/1200x/c1/88/3b/c1883b2bb52ca464dcd1ae7141339f71.jpg", categoria:"Poesia"},
+  {nome: "História da filosofia ocidental (Bertrand Russell [Russell, Bertrand]", pdf:"https://drive.google.com/file/d/1-sOanB9OYufyDBgJU4OaF17EjRkHvk7C/view?usp=drive_open", img:"https://i.pinimg.com/736x/90/b6/47/90b647623a2bf526c2b8e244174ca72f.jpg", categoria:"Educação"},
+  {nome: "Obra Completa de Fernando Pessoa - Oito volumes (Fernando Pessoa)", pdf:"https://drive.google.com/file/d/1q2ADy3KwrbZQf4350AEAJIO6lX0wqmCc/view", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQNfRbaSzEXd9cbfuSywUN_B5v1GO5A5nDw&s", categoria:"Biografia"},
+  {nome: "Além do Bem e do Mal (Friedrich Nietzsche)", pdf:"https://drive.google.com/file/d/1rYi5-gXLgrjUy0e_GHjhMytKHzWA2XcP/view", img:"https://i.pinimg.com/1200x/a3/aa/66/a3aa6627fc8466a5f243bcae60a7c562.jpg", categoria:"Existencialismo"},
+  {nome: "Assim Falou Zaratustra (Friedrich Nietzsche)", pdf:"https://drive.google.com/file/d/1DBhAAFqKgFt-CdqMZAsuJFEjCf5gzQSk/view", img:"https://i.pinimg.com/736x/d5/35/79/d53579e75885451924d1bb5acc87da2f.jpg", categoria:"Existencialismo"},
+  {nome: "Carta ao pai (Kafka, Franz)", pdf:"https://drive.google.com/file/d/1Xzu-8H4HPKr2dDTgU8GEJfu90yvtEXZG/view", img:"https://i.pinimg.com/736x/49/9e/59/499e5915805e97ffea1a489985f452e2.jpg", categoria:"Biografia"},
+  {nome: "A Metamorfose (Kafka Franz) ", pdf:"https://drive.google.com/file/d/1jz6sGWjznmR1LR9RIq_kQ4F_lRBw19Y7/view", img:"https://i.pinimg.com/736x/d5/43/8f/d5438fbea37ce46db2948f7a62d3572b.jpg", categoria:"Existencialismo"},
+  {nome: "O Jogo das Contas de Vidro (Hermann Hesse) ", pdf:"https://drive.google.com/file/d/19BD1BvQBtNahNP0-MyxAeYRaI4VTyVW_/view?usp=drive_open", img:"https://i.pinimg.com/736x/b5/6c/6e/b56c6ecae72b4bac5e3cdcd0adaa849f.jpg", categoria:"Existencialismo"},
+
 ];
 
 // ----------------------------------------------------- CATEGORIAS ---------------------------------------------------------------------------------------------
@@ -338,4 +360,5 @@ categoriaLinks.forEach(link => {
 
 
 renderAllCategories();
+
 
